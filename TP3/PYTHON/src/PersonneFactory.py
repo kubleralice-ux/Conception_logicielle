@@ -3,7 +3,7 @@ from src.enseignant import Enseignant
 
 class PersonneFactory:
     @staticmethod
-    def creer_personne(type_personne, nom, age, infos):
+    def creer_personne(type_personne, nom, age, infos = None):
         #infos est une liste 
         if type_personne.lower() == "etudiant":
             numero_etudiant, moyenne, cours = infos[0], infos[1], infos[2]
