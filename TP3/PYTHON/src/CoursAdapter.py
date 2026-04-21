@@ -1,10 +1,10 @@
-from src.LegacyCours import LegacyCourseSystem
+from src.LegacyCours import LegacyCoursSystem
 from src.ICoursProvider import ICoursProvider
 from src.cours import Cours
 
 class CoursAdapter(ICoursProvider):
-    def __init__(self):
-        self._legacy = LegacyCourseSystem()
+    def __init__(self, legacy_system):
+        self._legacy = legacy_system
 
     def recuperer_cours(self):
         donnees_brutes = self._legacy.obtenir_donnees_brutes()

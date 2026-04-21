@@ -6,6 +6,7 @@ class Etudiant(Personne):
         self.numero_etudiant = numero_etudiant
         self.__moyenne = 0
         self.cours = cours
+        self.notes = []
         self._observers = []
     
     def abonner(self, observateur):

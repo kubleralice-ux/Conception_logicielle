@@ -1,4 +1,4 @@
-from TP3.PYTHON.src import etudiant
+from src.etudiant import Etudiant
 
 
 class ScolariteManager:
@@ -17,3 +17,17 @@ class ScolariteManager:
     def update(self, etudiant):
         print(f"[NOTIF MANAGER] Note reçue pour {etudiant.get_nom()}. "
               f"Nouvelle moyenne globale : {etudiant.get_moyenne()}")
+        
+    def set_strategie(self, strategie):
+        self._strategie = strategie
+
+    def afficher_classement(self):
+        if self._strategie is None:
+            print("Aucune stratégie de tri sélectionnée !")
+            return
+        
+        liste_triee = self._strategie.trier(self.liste_etudiants)
+        
+        print("Tri des étudiants :")
+        for e in liste_triee:
+            print(e.afficher_details())

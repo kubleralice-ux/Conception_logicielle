@@ -6,8 +6,8 @@ class PersonneFactory:
     def creer_personne(type_personne, nom, age, infos = None):
         #infos est une liste 
         if type_personne.lower() == "etudiant":
-            numero_etudiant, moyenne, cours = infos[0], infos[1], infos[2]
-            return Etudiant(nom, age, numero_etudiant, moyenne, cours)
+            numero_etudiant, cours = infos[0], infos[1]
+            return Etudiant(nom, age, numero_etudiant, cours)
         
         elif type_personne.lower() == "enseignant":
             salaire = infos[0]

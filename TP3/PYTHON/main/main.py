@@ -10,7 +10,7 @@ from src.CoursAdapter import CoursAdapter
 from src.EtudiantBoursier import EtudiantBoursier
 from src.EtudiantDelegue import EtudiantDelegue
 from src.EtudiantDecorator import EtudiantDecorator
-from src.LegacyCours import LegacyCours
+from src.LegacyCours import LegacyCoursSystem
 from src.PersonneFactory import PersonneFactory
 from src.TriParMoyenne import TriParMoyenne
 from src.TriParNom import TriParNom
@@ -19,14 +19,14 @@ def main():
 
     manager = ScolariteManager()
 
-    vieux_systeme = LegacyCours()
+    vieux_systeme = LegacyCoursSystem()
     adaptateur = CoursAdapter(vieux_systeme)
     cours_python = adaptateur.recuperer_cours() 
-    print(f"Cours chargé via Adapter : {cours_python.nom} ({cours_python.prof})")
+    print(f"Cours chargé via Adapter : {cours_python.nom} ({cours_python.professeur})")
 
     alice = PersonneFactory.creer_personne("etudiant", "Alice", 20, "E001")
     bob = PersonneFactory.creer_personne("etudiant", "Bob", 21, "E002")
-    prof = PersonneFactory.creer_personne("professeur", "M. Durand", 45, "Informatique")
+    prof = PersonneFactory.creer_personne("enseignant", "M. Durand", 45, [4000])
 
     manager.ajouter_etudiant(alice)
     manager.ajouter_etudiant(bob)
