@@ -12,7 +12,7 @@ public class Etudiant extends Personne {
     private List<Float> notes;
     private double moyenne = 0;
     private List<Cours> cours;
-    private ScolariteManager observateur;
+    public ScolariteManager observateur;
 
     public Etudiant(String nom, int age, String numeroEtudiant, double moyenne, List<Cours> cours) {
         super(nom, age);
