@@ -67,7 +67,8 @@ def main():
     alice.ajouter_note(14) # Nouvelle moyenne : 16
 
     # Encore 5
-    print("\nTri par Moyenne après saisie des notes :")
+    print("\nEncore 5. Strategy après saisie des notes")
+    print("Tri par Moyenne après saisie des notes :")
     manager.set_strategie(TriParMoyenne())
     manager.afficher_classement()
 

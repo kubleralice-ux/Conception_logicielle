@@ -15,15 +15,15 @@ class ScolariteManager:
         etudiant.abonner(self)
 
     def update(self, etudiant):
-        print(f"[NOTIF MANAGER] Note reçue pour {etudiant.get_nom()}. "
-              f"Nouvelle moyenne globale : {etudiant.get_moyenne()}")
+        print(f"[NOTIFICATION MANAGER] Note reçue pour {etudiant.get_nom()}. "
+              f"Calcul de la nouvelle moyenne globale : {etudiant.get_moyenne()}")
         
     def set_strategie(self, strategie):
         self._strategie = strategie
 
     def afficher_classement(self):
         if self._strategie is None:
-            print("Aucune stratégie de tri sélectionnée !")
+            print("Aucune stratégie de tri sélectionnée")
             return
         
         liste_triee = self._strategie.trier(self.liste_etudiants)
