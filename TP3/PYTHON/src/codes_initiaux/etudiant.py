@@ -1,4 +1,4 @@
-from src.personne import Personne
+from src.codes_initiaux.personne import Personne
 
 class Etudiant(Personne):
     def __init__(self, nom, age, numero_etudiant, cours):
