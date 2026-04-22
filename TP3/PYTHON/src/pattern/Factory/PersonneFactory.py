@@ -1,5 +1,5 @@
-from src.etudiant import Etudiant
-from src.enseignant import Enseignant
+from src.codes_initiaux.etudiant import Etudiant
+from src.codes_initiaux.enseignant import Enseignant
 
 class PersonneFactory:
     @staticmethod

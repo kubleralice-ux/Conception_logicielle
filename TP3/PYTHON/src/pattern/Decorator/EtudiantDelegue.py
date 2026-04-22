@@ -1,4 +1,4 @@
-from src.EtudiantDecorator import EtudiantDecorator
+from src.pattern.Decorator.EtudiantDecorator import EtudiantDecorator
 
 class EtudiantDelegue(EtudiantDecorator):
     def organiser_reunion(self):

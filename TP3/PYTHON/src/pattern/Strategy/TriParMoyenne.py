@@ -1,4 +1,4 @@
-from src.ITriStrategy import ITriStrategy
+from src.pattern.Strategy.ITriStrategy import ITriStrategy
 
 class TriParMoyenne(ITriStrategy):
     def trier(self, liste_etudiants):

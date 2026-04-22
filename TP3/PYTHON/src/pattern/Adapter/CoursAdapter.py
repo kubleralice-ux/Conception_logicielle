@@ -1,6 +1,6 @@
-from src.LegacyCours import LegacyCoursSystem
-from src.ICoursProvider import ICoursProvider
-from src.cours import Cours
+from src.pattern.Adapter.LegacyCours import LegacyCoursSystem
+from src.pattern.Adapter.ICoursProvider import ICoursProvider
+from src.codes_initiaux.cours import Cours
 
 class CoursAdapter(ICoursProvider):
     def __init__(self, legacy_system):

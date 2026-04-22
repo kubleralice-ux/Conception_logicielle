@@ -1,4 +1,4 @@
-from src.EtudiantDecorator import EtudiantDecorator
+from src.pattern.Decorator.EtudiantDecorator import EtudiantDecorator
 
 class EtudiantBoursier(EtudiantDecorator):
     def afficher_statut(self):
