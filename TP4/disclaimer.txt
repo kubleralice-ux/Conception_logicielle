@@ -1,0 +1,5 @@
+N'ayant pas été precisé dans les tâches à accomplir, la classe Etudiant ne dispose pas de getter et setter pour la liste des cours.
+
+Nous supposons alors dans le diagramme de séquence demandé l'existance de la methode ajouter_cours(cours: Cours), ajoutant un objet Cours déjà existant à la liste des cours de l'élève.
+
+De même, le code ne disposant ni de service d'affichage ni de notion de rapport de l'étudiant, nous supposons que cette requette concerne la méthode afficher_details().
